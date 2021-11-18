@@ -1,1 +1,1 @@
-## This is the week 6 material
+# This is the week 6 material

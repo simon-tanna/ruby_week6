@@ -35,6 +35,9 @@ if age >= 18
 else
     puts ("#{name}, you are a child")
 end
+# asks user if they like butter chicken
+puts ("Do you like to eat butter chicken?")
+
 
 
 
