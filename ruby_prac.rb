@@ -65,4 +65,59 @@ else
 end
 # logical operators compare boolean conditions and return true or false values
 # short circuit logic combines two or more conditions together
-
+    # 3 Types - &&: both sides must be true. ||: one side must evaluate to true. !: returns the opposite value
+puts true && true
+puts true && false
+#example of &&
+snowing = true
+wearing_jacket = true
+if snowing && wearing_jacket
+    puts "You will be warm"
+else 
+    puts "You will be uncomfortable"
+end
+num = 40
+if num > 0 && num % 2 == 0
+    puts "Positive and even number"
+elsif num > 0 && num %2 != 0
+    puts "Positive and odd number"
+else
+    puts "negative number"
+end
+#ARRAYS
+# Arrays are a collection of items. While defining values, similar types of data can be grouped
+family = ["simon", "chantal", "leo", "xavier"]
+numbers = [1,2,3,4]
+odd_even = [[1,3], [2,4]]
+items = [1,2, 'a', 'b', [3,4]]
+# Accessing elements in an array
+    # Array index always starts at 0 (not 1)
+    # syntax to access is variable name []
+puts family [0]
+# Array methods
+puts family.length
+puts numbers.join
+puts family.include?("chantal")
+puts family.include?("peter")
+family.delete("simon")
+puts family
+family.delete_at(2)
+puts family
+# Array mutation
+    # when you copy a name string and change the original, the copy also changes as it points to the same memory location
+team = ["tom", "tim", "tony"]
+team_copy = team
+puts team
+puts team_copy
+team[0] = "takata"
+puts team
+puts team_copy
+# To overcome this we need to clone or dup the array
+team2 = ["tom", "tim", "tony"]
+team2_copy = team2.clone
+puts team2_copy
+team2[0] = "toad"
+puts team2
+puts team2_copy
+# Error handling
+    # Errors immediately stop the code but there are ways to stop it
