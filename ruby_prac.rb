@@ -182,11 +182,31 @@ profile = {:name => "simon", :age => 15, :title => :musician,
 
 puts profile[:name]
 puts profile[:age]
+#accessing array within a hash
 puts profile[:hobbies][0]
 puts profile[:hobbies][1]
+#accessing a hash within a hash
 puts profile[:schedule][:monday]
 puts profile[:schedule][:tuesday]
+# non existent value will return nil
 p profile[:schedule][:wednesday]
 
 #if a key is defined as a symbol, needs to accessed as a symbol. if defined as a string, must be accessed as a string.
+# alternate syntax is preferred
+    #shorthand is having colon at the front
+
+profile2 = {name: "barnsie", age: 55, title: "musician", hobbies: ["eating", "drinking"], schedule: {monday: "bugger all", tuesday: "more bugger all"}}
+puts profile2
+
+# Hash methods
+    # access and manipulate has elements
+
+#keys
+puts profile.keys
+
+#values
+puts profile.values
+
+#length 
+puts profile.length
 
